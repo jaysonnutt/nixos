@@ -191,6 +191,8 @@ bar {
   status_command i3status
 }
 
+new_window pixel 1
+
 # THEME
 
 set $rosewater #f5e0dc

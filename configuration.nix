@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, callPackage, ... }:
+{ config, pkgs, callPackage, lib, ... }:
 
 {
   imports =
@@ -149,17 +149,33 @@
     };
   };
 
+  virtualisation.docker = {
+    enable = true;
+  };
+
   services.displayManager.defaultSession = "none+i3";
 
   programs.i3lock.enable = true;
 
   programs.dconf.enable = true;
 
+  # Enable LightDM
+  services.displayManager.sddm.enable = false;
+  services.xserver.displayManager.lightdm.enable = true;
+
+  services.xserver.displayManager.lightdm.greeters.gtk.enable = true;
+
+  # Set the greeter's GTK theme to a dark variant (e.g., Adwaita-dark or another dark theme)
+  services.xserver.displayManager.lightdm.greeters.gtk.theme.name = "Adwaita-dark";
+
+  # --- Set the background to a hex color ---
+  services.xserver.displayManager.lightdm.background = "#202020";
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jayson = {
     isNormalUser = true;
     description = "Jayson";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [];
   };
 
@@ -204,7 +220,7 @@
     ranger
     fzf
     binutils
-    docker
+    adwaita-icon-theme
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
