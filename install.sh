@@ -7,5 +7,10 @@ sudo nix-channel --update
 mkdir -p ~/.config/i3/
 cp ./config ~/.config/i3/
 
+mkdir -p ~/.config/polybar/
+cp ./config.ini ~/.config/polybar/
+cp ./launch.sh ~/.config/polybar/
+chmod +x ~/.config/polybar/launch.sh
+
 sudo cp ./configuration.nix /etc/nixos/configuration.nix
 
