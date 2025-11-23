@@ -15,8 +15,8 @@ cp ./launch.sh ~/.config/polybar/
 chmod +x ~/.config/polybar/launch.sh
 
 # Wallpaper
-mkdir -p ~/Photos/
-cp ./wall.png ~/Photos/
+mkdir -p ~/Pictures/
+cp ./wall.png ~/Pictures/
 
 # NixOS
 sudo cp ./configuration.nix /etc/nixos/configuration.nix
