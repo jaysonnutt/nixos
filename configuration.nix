@@ -220,7 +220,7 @@
     curl
     wget
     gnome-tweaks
-    ranger
+    yazi
     fzf
     binutils
     adwaita-icon-theme
