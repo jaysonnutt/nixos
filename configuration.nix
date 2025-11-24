@@ -68,8 +68,8 @@
       initExtra = ''
       '';
       shellAliases = {
-        ll="ls -alG";
-        ls="ls -alG";
+        ll="ls --color=auto -alG";
+        ls="ls --color=auto -alG";
 	e="nvim";
 	vi="nvim";
 	vim="nvim";
