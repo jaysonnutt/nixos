@@ -75,6 +75,7 @@
 	ec="nvim /etc/nixos/configuration.nix";
 	ei="nvim ~/.config/i3/config";
 	update="sudo nixos-rebuild switch";
+	ff="fastfetch";
       };
     };
 
@@ -195,6 +196,7 @@
     brave
     fastfetch
     alacritty
+    kitty
     alacritty-theme
     rofi
 

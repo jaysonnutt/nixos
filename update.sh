@@ -6,3 +6,4 @@ sudo cp ~/.config/i3/config .
 sudo cp ~/.config/polybar/config.ini .
 sudo cp ~/.config/polybar/launch.sh .
 sudo cp ~/Photos/wall.png .
+sudo cp ~/.config/kitty/kitty.conf .

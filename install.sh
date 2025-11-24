@@ -18,6 +18,10 @@ chmod +x ~/.config/polybar/launch.sh
 mkdir -p ~/Photos/
 cp ./wall.png ~/Photos/
 
+# Kitty
+mkdir -p ~/.config/kitty/
+cp ./kitty.conf ~/.config/kitty/
+
 # NixOS
 sudo cp ./configuration.nix /etc/nixos/configuration.nix
 
