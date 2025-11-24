@@ -189,7 +189,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 exec_always ~/.config/polybar/launch.sh &
 
-exec_always feh --bg-fill ~/Pictures/wall.png
+exec_always feh --bg-fill ~/Photos/wall.png
 
 # THEME
 

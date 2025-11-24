@@ -171,6 +171,10 @@
   # --- Set the background to a hex color ---
   services.xserver.displayManager.lightdm.background = "#202020";
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.hack
+  ];
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jayson = {
     isNormalUser = true;
@@ -191,7 +195,6 @@
     brave
     fastfetch
     alacritty
-    nerd-fonts.jetbrains-mono
     alacritty-theme
     rofi
 
