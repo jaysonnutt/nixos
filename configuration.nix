@@ -77,8 +77,9 @@
 	ei="nvim ~/.config/i3/config";
 	update="sudo nixos-rebuild switch";
 	ff="fastfetch";
-	".."="cd ..";
-	"..."="cd ../..";
+	rm="trash";
+	".."="cd .. && ll";
+	"..."="cd ../.. && ll";
       };
     };
 
@@ -233,6 +234,7 @@
     killall
     feh
     ripgrep
+    trash-cli
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
