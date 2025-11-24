@@ -21,6 +21,7 @@ cp ./wall.png ~/Photos/
 # Kitty
 mkdir -p ~/.config/kitty/
 cp ./kitty.conf ~/.config/kitty/
+cp ./current-theme.conf ~/.config/kitty/
 
 # NixOS
 sudo cp ./configuration.nix /etc/nixos/configuration.nix

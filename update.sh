@@ -7,3 +7,4 @@ sudo cp ~/.config/polybar/config.ini .
 sudo cp ~/.config/polybar/launch.sh .
 sudo cp ~/Photos/wall.png .
 sudo cp ~/.config/kitty/kitty.conf .
+sudo cp ~/.config/kitty/current-theme.conf .
