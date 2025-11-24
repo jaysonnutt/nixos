@@ -68,7 +68,8 @@
       initExtra = ''
       '';
       shellAliases = {
-        ll="ls -al";
+        ll="ls -alG";
+        ls="ls -alG";
 	e="nvim";
 	vi="nvim";
 	vim="nvim";
@@ -76,6 +77,8 @@
 	ei="nvim ~/.config/i3/config";
 	update="sudo nixos-rebuild switch";
 	ff="fastfetch";
+	".."="cd ..";
+	"..."="cd ../..";
       };
     };
 
@@ -229,6 +232,7 @@
     polybar
     killall
     feh
+    ripgrep
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
