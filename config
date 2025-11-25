@@ -67,7 +67,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
+#bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
@@ -194,6 +194,8 @@ exec_always feh --bg-fill ~/Photos/wall.png
 exec_always --no-startup-id ~/.config/i3/set_resolution.sh
 
 bindsym $mod+Shift+F exec flameshot gui
+
+bindsym $mod+L exec --no-startup-id dm-tool switch-to-greeter
 
 # THEME
 
