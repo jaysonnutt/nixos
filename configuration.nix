@@ -78,6 +78,7 @@
 	update="sudo nixos-rebuild switch";
 	ff="fastfetch";
 	rm="trash";
+	f="yazi";
 	".."="cd .. && ll";
 	"..."="cd ../.. && ll";
       };
