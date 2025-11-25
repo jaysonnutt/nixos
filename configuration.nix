@@ -199,9 +199,7 @@
     lxappearance
     brave
     fastfetch
-    alacritty
     kitty
-    alacritty-theme
     rofi
 
     # Cybersecurity
