@@ -148,8 +148,8 @@
       enable = true;
       extraPackages = with pkgs; [
         dmenu
-	i3status
-	i3blocks
+        i3status
+        i3blocks
       ];
     };
   };
