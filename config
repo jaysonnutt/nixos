@@ -191,6 +191,8 @@ exec_always ~/.config/polybar/launch.sh &
 
 exec_always feh --bg-fill ~/Photos/wall.png
 
+exec_always --no-startup-id ~/.config/i3/set_resolution.sh
+
 # THEME
 
 set $rosewater #f5e0dc

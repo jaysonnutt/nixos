@@ -1,4 +1,4 @@
-#!/bin/bash
+#/home/$(echo $USER)/.nix-profile/bin/bash
 
 # Add Home Manager 25.05 channel
 sudo nix-channel --add https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz home-manager
@@ -7,6 +7,8 @@ sudo nix-channel --update
 # i3
 mkdir -p ~/.config/i3/
 cp ./config ~/.config/i3/
+cp ./set_resolution.sh ~/.config/i3/
+chmod +x ~/.config/i3/set_resolution.sh
 
 # Polybar
 mkdir -p ~/.config/polybar/
