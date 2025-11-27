@@ -205,6 +205,7 @@
 
     # Cybersecurity
     nmap
+    burpsuite
     aircrack-ng
     ghidra
     john
